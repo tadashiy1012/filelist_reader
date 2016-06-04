@@ -1,0 +1,21 @@
+{
+  "name": "filelist_reader",
+  "version": "1.0.0",
+  "description": "Get the file list from the target directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require intelli-espower-loader"
+  },
+  "keywords": ["file", "directory", "fs"],
+  "author": "Tadashi Yamazaki <tadashi.y1012@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^2.5.3",
+    "power-assert": "^1.4.1"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "homepage": ""
+}
