@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/filelist_reader.svg)](https://badge.fury.io/js/filelist_reader)
+[![Build Status](https://travis-ci.org/tadashiy1012/filelist_reader.svg?branch=master)](https://travis-ci.org/tadashiy1012/filelist_reader)
+
 # filelist_reader
 Get the file list from the target directory
 
