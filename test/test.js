@@ -7,6 +7,7 @@ const testDir = path.join(__dirname, 'test_dir');
 describe('filelist_reader test', () => {
   it('Pattern of arguments expected', (done) => {
     reader(testDir).then((result) => {
+      console.log(result);
       assert(result !== undefined);
       assert(Array.isArray(result));
       assert(result.length === 3);
@@ -19,6 +20,13 @@ describe('filelist_reader test', () => {
       assert(Array.isArray(result));
       assert(result.length === 1);
       assert(result[0].substring(result[0].lastIndexOf('/') + 1) === 'moge.html');
+      done();
+    });
+  });
+  it('Pattern of arguments expected C', (done) => {
+    reader(testDir, '*', true).then((result) => {
+      assert(result !== undefined);
+      assert(result.length === 4);
       done();
     });
   });
